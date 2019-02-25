@@ -14,9 +14,9 @@ var PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-htmlRoutes(app);
-apiRoutes(app, friends);
 
+apiRoutes(app, friends);
+htmlRoutes(app);
 // var user1 = users[0].scores;
 // var user2 = users[1].scores;
 // var user3 = users[2].scores;
